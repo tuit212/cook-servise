@@ -1,0 +1,84 @@
+.hero-section{
+    padding-top: 71px;
+    margin-bottom: 120px;
+}
+.hero{
+    padding: 50px 12px 50px 50px;
+    background: #212629;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.05), 40px 40px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 80px 80px 80px 5px;
+    position: relative;
+}
+.hero__content{
+    width: 54%;
+}
+.hero__content::after{
+    content: ' ';
+    position: absolute;
+    background-image: url("../../img/hero__img.png");
+    width: 610px;
+    height: 790px;
+    background-size: 100%;
+    top: 0;
+    right: 0;
+    background-position-y: -20px;
+    background-repeat: no-repeat;
+}
+.hero__content-title{
+    @include text (700 , 62px , 50px , #fff);
+}
+.hero__content-wrapper{
+    width: 244px;
+    margin-top: 50px;
+    margin-bottom: 120px;
+    padding: 10px 10px 10px 30px;
+    @include center (none);
+    background: #212629;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5), -1px -1px 6px rgba(255, 255, 255, 0.05), -5px -5px 20px rgba(255, 255, 255, 0.1), 5px 5px 20px rgba(0, 0, 0, 0.8);
+    border-radius: 99px;
+    cursor: pointer;
+}
+.hero__content-wrapper:hover{
+    opacity: 0.8;
+}
+.hero__content-wrapper:active{
+    opacity: 0.6;
+}
+.hero__content-wrapper > a{
+    @include text (700 , 20px , 18px , #fe9102);
+}
+.hero__content-wrapper > img{
+    margin-left: 20px;
+}
+label{
+    cursor: pointer;
+}
+label + label{
+    margin-left: 20px;
+}
+input[type="radio"]{
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        border: 0;
+        clip: rect(0 0 0 0)
+}
+.scroll{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.scroll__oddiy{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(233, 233, 233, 0.25);
+
+}

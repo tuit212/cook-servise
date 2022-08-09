@@ -1,0 +1,47 @@
+.site-header{
+    padding: 40px 0 0 0;
+}
+.header{
+    @include center (space-between);
+}
+.header__list{
+    @include center (none);
+}
+.header__link-logo{
+    display: inline-block;
+}
+.header__item + .header__item{
+    margin-left: 20px;
+}
+.header__item:hover{
+    opacity: 0.8;
+}
+.header__item:active{
+    opacity: 0.5;
+}
+.header__item-wrapper{
+    @include center (none);
+    padding: 10px 30px;
+    background-color: #25D366;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.header__item-text{
+    margin-left: 10px;
+    @include text (700 , 20px , 18px , #fff);
+}
+.header__item-link-text{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #E9E9E9;
+    border-radius: 30px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08), -1px -1px 6px rgba(255, 255, 255, 0.5), -5px -5px 20px #FFFFFF, 5px 5px 20px #D3D3D3;
+    @include text (700 , 20px , 18px , #212629);
+}
+.header__item-user{
+    display: inline-block;
+    padding: 10px 12px;
+    background: #E9E9E9;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08), -1px -1px 6px rgba(255, 255, 255, 0.5), -5px -5px 20px #FFFFFF, 5px 5px 20px #D3D3D3;
+}
